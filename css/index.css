@@ -1,0 +1,580 @@
+a:hover {
+  color: inherit;
+}
+
+.nav-color {
+  color: #3D4C67;
+}
+
+.btn-style {
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #3D4C67;
+  text-decoration: none;
+  font-size: 1.35vw;
+  border: none;
+  cursor: pointer;
+  padding: .1823vw .9375vw;
+}
+
+.btn-style:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-btn {
+  color: #FFFFFF;
+  background-color: #2B3979;
+  box-shadow: 0px 0px 30px #2B397933;
+}
+
+.active-btn:hover {
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.head-text {
+  color: #2F3D53;
+  font-weight: 600;
+}
+
+.active-nav-item {
+  background-color: #D22030;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 0px 16px #D2203040;
+  font-weight: 600;
+}
+
+.active-nav-link, .active-nav-link:hover{
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.vertical-nav {
+  min-width: 17.5vw;
+  width: 17.5vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 20px #00000029;;
+  transition: all 0.4s;
+  overflow-y: auto;
+  font-size: 1.35vw;
+}
+
+.vertical-nav li {
+  padding-top: 2.04vh;
+  padding-bottom: 2.04vh;
+  padding-left: 1.15vw;
+}
+
+.page-content {
+  width: calc(100% - 17.5vw);
+  margin-left: 17.5vw;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebarCollapse {
+  display: none;
+}
+
+/* for main cotent */
+
+html, body{
+  background-color: #F0F3F6;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ----- for page header ----- */
+ /* ----- Search Bar ----- */
+#content-header {
+  height: 115px;
+  padding: 27px 26px;
+}
+
+#search-bar {
+  width: 32.45vw;
+  height: 5.65vh;
+  min-height: 3rem;
+  border-radius: 11px;
+  box-shadow: 0px 0px 30px #00000014;
+}
+
+#search-bar input, #search-bar input:focus {
+  border: none;
+  height: 5.65vh;
+  min-height: 3rem;
+  border-radius: 11px 0 0 11px;
+  box-shadow: none;
+}
+
+#search-bar button {
+  width: 3.75vw;
+  height: 5.65vh;
+  min-height: 3rem;
+  border: none;
+  border-radius: 0 11px 11px 0;
+  background-color: #D22030;
+  font-size: 1.46vw;
+}
+ /* ----- Datetime ----- */
+#datetime {
+  font-size: 1.04vw;
+  letter-spacing: 0px;
+  margin: auto 7vw;
+}
+
+#notification-bell {
+  position: relative;
+  color: #6A6A6A;
+  top: 9px;
+}
+
+.fa-bell {
+  font-size: 2vw;
+}
+
+#notification-bell span {
+  position: absolute;
+  top: -6px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.user-info {
+  float: right;
+  width: 15vw;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.3vw;
+  letter-spacing: 0;
+  color: #4E4E4E;
+}
+
+.profile-img{
+  width: 62px;
+}
+.user-info img {
+  width: 100%;
+}
+
+.profile-links {
+  display: none;
+  width: 197px;
+  height: 143px;
+  position: absolute;
+  right: 37px;
+  top: 123px;
+  font-size: 18px;
+  font-weight: 400;
+  z-index: 1;
+  color: #4E4E4E;
+}
+
+.profile-links div {
+  margin: 28px 19px;
+  cursor: pointer;
+}
+
+.active-profile {
+  display: block;
+}
+
+.select-box {
+  width: 11.36vw;
+  font-size: 1.156vw;
+}
+
+/* ----- For tables content -----*/
+.container-fluid, .table-responsive, table {
+  box-shadow: 0px 0px 30px #00000014;
+}
+
+thead tr{
+  height: 98px;
+  background-color: #F5F5F5;
+  color: #4E4E4E;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  border: none;
+}
+
+tbody :first-child td {
+  border: none
+}
+
+th:last-of-type, td:last-of-type {
+  padding-left: 14.43vw !important;
+  text-align: center;
+  color: #6A6A6A;
+}
+
+tbody tr {
+  color: #6A6A6A;
+  font-size: 20px;
+}
+th {
+  border: none !important;
+}
+td {
+  padding-top: 2.1875rem !important;
+  padding-bottom: 2.1875rem !important;
+  color: #6A6A6A;
+}
+
+/* The switch - the box around the slider */
+table .switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+table .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+table .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 6px #00000029;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+table .slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #C5C5C5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+table input:checked + .slider:before {
+  background-color: #20E956;
+  box-shadow: 0px 0px 6px #20E95666;
+}
+
+table input:checked + .slider:before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+/* Rounded sliders */
+table .slider.round {
+  border-radius: 19px;
+}
+
+table .slider.round:before {
+  border-radius: 19px;
+}
+
+@media (max-width: 1300px) {
+  .vertical-nav {
+    width: 17rem;
+    font-size: 1.25rem
+  }
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+
+  #search-bar {
+    margin: auto 2rem;
+  }
+
+  #search-bar button {
+    width: 3.5rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 16px
+  }
+   /* ----- Datetime ----- */
+  #datetime {
+    display: none!important;
+  }
+  .fa-bell{
+    font-size: 1.75rem
+  }
+  .user-info {
+    width: 4rem;
+    font-size: .75rem
+  }
+  .user-info span{
+    display: none;
+  }
+  .select-box, .btn-style {
+    min-width: 4rem;
+    font-size: .75rem;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  #sidebar {
+    margin-left: -21rem;
+  }
+  #sidebarCollapse{
+    display: inline-block;
+    height: 2.75rem;
+    width: 3.5rem;
+    border-radius: 11px;
+    color: white;
+    background-color: #2B3979;
+  }
+  #sidebar.active {
+    margin-left: 0;
+    margin-top: 5.2rem;
+    z-index: 3;
+    height: calc(100vh - 5.2rem);
+  }
+
+  #search-bar input {
+    display: none!important;
+  }
+
+  #search-bar {
+    width: 3.5rem!important;
+    border-radius: 11px!important;
+    margin: auto 2rem;
+  }
+
+  #search-bar button {
+    border-radius: 11px;
+    width: 3.5rem;
+    height: 2.75rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 16px
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/*----- For popups and modals -----*/
+
+.popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 3;
+  background-color: rgba(78, 78, 78, 0.1);
+  border: 1px solid rgba(112, 112, 112, 1);
+}
+
+.popup .container {
+  width: 1035px;
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.popup .login-form {
+  background-color: #FFFFFF;
+  top: 24.54vh;
+  width: 36.77vw;
+  height: ;
+  border-radius: 21px;
+  box-shadow: 0px 3px 50px #0000001A;
+}
+
+.popup h1 {
+  color: #2B3979;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 43px 47px 45px;
+
+}
+
+.popup .form-control {
+  width: 86%;
+  height: 62px;
+  margin: 32px 47px;
+  border: none;
+  box-shadow: 0px 0px 6px #00000038;
+  border-radius: 8px;
+  padding-left: 31px;
+  color: rgba(61, 76, 103, .61);
+  font-size: 20px;
+}
+
+.popup textarea {
+  height: 155px !important;
+  resize: none;
+}
+
+.popup .file-input-btn {
+  width: 86%;
+  height: 168px;
+  margin: 32px 47px;
+  padding: 36px;
+  background-color: #2B397912;
+  box-shadow: 0px 0px 6px #00000038;
+  border-radius: 8px;
+  background: linear-gradient(to right, #707070 50%, rgba(255, 255, 255, 0) 0%),
+  linear-gradient(#707070 50%, rgba(255, 255, 255, 0) 0%),
+  linear-gradient(to right, #707070 50%, rgba(255, 255, 255, 0) 0%),
+  linear-gradient(#707070 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: top, right, bottom, left;
+  background-repeat: repeat-x, repeat-y;
+  background-size: 16px 1px, 1px 16px;
+  background-color: #2B397912;
+  cursor: pointer;
+}
+
+.file-input-btn img {
+  display: flex;
+  margin: auto;
+}
+
+.file-input-btn p  {
+  text-align: center;
+  color: #4E4E4E;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.popup .btns {
+  display: flex;
+  justify-content: flex-end;
+  margin: 80px 47px 47px auto;
+}
+.popup .submit-btn {
+  display: inline-block;
+  background-color: #D22030;
+  box-shadow: none;
+  padding: 0;
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 25px;
+  width: 247px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.popup .cancel-btn {
+  display: inline-block;
+  background-color: #D9D9D9;
+  box-shadow: none;
+  padding: 0;
+  color: #4E4E4E;
+  margin: 0 14px;
+  font-size: 25px;
+  width: 162px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ----- for change password popup ----- */
+
+.change-password-popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 3;
+  background-color: rgba(78, 78, 78, 0.1);
+  border: 1px solid rgba(112, 112, 112, 1);
+}
+
+.change-password-popup .container {
+  width: 1035px;
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.change-password-popup .login-form {
+  background-color: #FFFFFF;
+  top: 24.54vh;
+  width: 36.77vw;
+  height: ;
+  border-radius: 21px;
+  box-shadow: 0px 3px 50px #0000001A;
+}
+
+.change-password-popup h1 {
+  color: #2B3979;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 43px 47px 45px;
+
+}
+
+.change-password-popup .form-control {
+  width: 86%;
+  height: 62px;
+  margin: 32px 47px;
+  border: none;
+  box-shadow: 0px 0px 6px #00000038;
+  border-radius: 8px;
+  padding-left: 31px;
+  color: rgba(61, 76, 103, .61);
+  font-size: 20px;
+}
+
+.change-password-popup .btns {
+  display: flex;
+  justify-content: flex-end;
+  margin: 80px 47px 47px auto;
+}
+.change-password-popup .submit-btn {
+  display: inline-block;
+  background-color: #D22030;
+  box-shadow: none;
+  padding: 0;
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 25px;
+  width: 247px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.change-password-popup .cancel-btn {
+  display: inline-block;
+  background-color: #D9D9D9;
+  box-shadow: none;
+  padding: 0;
+  color: #4E4E4E;
+  margin: 0 14px;
+  font-size: 25px;
+  width: 162px;
+  cursor: pointer;
+  font-weight: 600;
+}
